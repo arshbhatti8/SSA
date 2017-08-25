@@ -1,0 +1,324 @@
+
+
+a {
+  text-decoration:none;
+  transition: all 500ms ease-in-out;
+}
+{
+  padding:0;
+  margin:0;
+}
+body{
+  overflow-x: hidden;
+  font-family: 'Open Sans',sans-serif;
+  text-rendering: optimizeLegibility !important;
+  ~webkit-font-smoothing: antialiased !important;
+}
+li{
+  list-style:none;
+  display: inline-block;
+}
+a:hover,
+a:active{
+  text-decoration:none;
+}
+h1{
+  font-family: 'PT Sans Narrow', Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color:white;
+}
+p{
+
+  font-size:15px;
+  line-height:21px;
+  color: white;
+  font-weight: 700;
+
+}
+.btn{
+  transition: all 300ms ease-in-out;
+  font-weight:600 !important;
+  text-transform: uppercase;
+  position:relative;
+  top:50%;
+
+
+}
+.btn:hover{
+  background-color: #ededed !important;
+  color: #3c3c3c !important;
+  border: 1px solid #fff !important;
+}
+
+/*NAVIGATION*/
+
+.navbar{
+  background-color: #222222 !important;
+  text-transform: uppercase;
+  font-family:'PT Sans Narrow', Arial, sans-serif;
+  font-weight:700;
+}
+.navbar a{
+  color:#fff !important;
+  opacity:0.7;
+
+}
+.navbar a:hover{
+  opacity:1;
+  background-color: #111111 !important;
+}
+.header{
+  height:600px;
+  width:100%;
+  padding:30px 0 30px;
+  margin-top: 50px;
+  background-image:url(../images/sjsu3.jpg);
+  background-position: center center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  color:#fff;
+}
+
+.header img{
+  /*height:420px;*/
+  /*width: 450px;*/
+  margin: 30px 0 0  40px;
+}
+.header h1{
+  font-size:35px;
+  font-weight:700;
+  padding-top:20px;
+
+}
+
+.header h1,
+.header button{
+  margin-top:10px;
+}
+
+@media(max-width: 768px){
+  .header{
+    padding:30px;
+    height:750px;
+  }
+  .header img{
+    width:90%;
+    height:250px;
+    margin:20px 0 0 20px;
+  }
+  .header .btn
+  {
+    font-size:15px;
+  }
+  .header h1{
+    font-size: 20px;
+  }
+  .header p{
+    font-size: 15px;
+  }
+}
+
+/*events*/
+
+.events{
+  padding:80px;
+  text-align: center;
+}
+.events h1,
+.events h4{
+  color: #4c4c4c;
+  margin: 20px 0 20px;
+
+}
+
+.events p{
+  color:#737373;
+  font-size:14px;
+  padding-bottom:40px;
+}
+
+.events i{
+  height:80px;
+  width:80px;
+  font-size:30px;
+  padding:25px 20px;
+  border-radius:50%;
+  background-color: #007dbf;
+  color:#fff;
+}
+.events button{
+    height:80px;
+    width:80px;
+    font-size:30px;
+    padding:25px 20px;
+    border-radius:50%;
+    background-color: #007dbf;
+    color:#fff;
+
+}
+@media(max-width:768px)
+{
+  .events{
+    padding:30px;
+  }
+}
+
+/*Council*/
+
+.council{
+  padding:50px 0 80px;
+  text-align: center;
+}
+.council b,
+.council h2,
+.council h4{
+  margin:20px 0 20px;
+  color:#4c4c4c;
+}
+.council h4{
+    font-weight: 500;
+}
+.council p{
+  color:#737373;
+}
+.council img{
+  height:150px;
+  width:150px;
+  margin-top:80px;
+}
+.council i{
+  height:30px;
+  width:30px;
+  padding:5px;
+  font-size: 17px;
+  border-radius: 50%;
+  background-color: #e9ca00;
+  color:#fff;
+}
+.council a:hover i{
+  background-color: #007dbf;
+}
+/*sponsors*/
+.sponsors {
+
+    padding: 50px 0 80px;
+    background-color: #82ccf3;
+    text-align: center;
+    color: #fff;
+}
+
+.sponsors h2 {
+
+    color: #fff;
+    font-weight: 600;
+}
+
+.sponsors p {
+
+    padding-bottom: 40px;
+}
+
+.sponsors img {
+
+    width: 200px;
+    opacity: 0.6;
+    cursor: pointer;
+    margin: 40px 0;
+    transition: all 500ms ease-in-out;
+}
+
+
+.sponsors li:hover img {
+
+    opacity: 1;
+}
+/*CONTACT*/
+
+.contact {
+
+    padding: 50px 0 80px;
+    text-align: center;
+}
+
+.contact p {
+
+    padding-bottom: 80px;
+    color: #737373;
+}
+
+.contact h2 {
+
+    color: #4c4c4c;
+    margin: 20px 0 20px;
+}
+
+.contact .input-group {
+
+    margin-bottom: 25px;
+}
+
+.contact .form-control {
+
+    border-radius: 0 !important;
+}
+
+.contact span {
+
+    border-radius: 0 !important;
+}
+
+.contact .btn {
+
+    border-radius: 0;
+    width: 100%;
+    font-size: 15px;
+    background-color: #f08080;
+    color: #fff;
+}
+
+.contact .btn:hover {
+
+    background-color: #a85959 !important;
+    color: #fff !important;
+}
+/*END CONTACT*/
+
+/*FOOTER*/
+
+.footer {
+
+    padding: 30px;
+    color: #cccccc;
+    background-color: #222222;
+}
+
+
+.footer .social {
+
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #cccccc;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+
+.footer input {
+
+    height: 40px;
+    width: 160px;
+    padding: 5px;
+    border: none;
+    background-color: #cccccc;
+    color: #000;
+}
+
+.footer .btn {
+
+    padding: 10px 5px 10px;
+    margin: -3px 0 0 5px;
+}

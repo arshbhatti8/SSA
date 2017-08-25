@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SSA</title>
+
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" >
+      <link rel="stylesheet" href="/stylesheets/animate.min.css" >
+      <link rel="stylesheet" href="/stylesheets/font-awesome/css/font-awesome.css" >
+
+      <link href="/stylesheets/style.css" rel="stylesheet">
+
+  </head>
+  <body ng-app="myApp">
+    <!--NAVIGATION-->
+
+    <div id="myNavbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                </button>
+                <a href="#header" class="navbar-brand">Sikh Student Association</a>
+
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#council">Council</a></li>
+                    <li><a href="#sponsors">Sponsors</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--END NAVIGATION-->
+    <!--HEADER-->
+
+    <div id="header" class="header" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 wow bounceInLeft" data-wow-delay="0.5s">
+                    <h1> Sikh Student Association of San Jose State</h1>
+                    <p>
+                        Sikh Students Association at San José State University is a student organization representing sikhs at SJSU, with a purpose to promote understanding between sikhs and non-sikh communities on and off campus.
+                        Sikh Students Association (SSA) exists to provide a forum for SJSU students to learn about Sikhism, its history, beliefs, and culture.
+                        This is achieved by building working relationships with other organizations and performing community service.
+                    </p>
+                    <button class="btn btn-lg btn-primary">View Detail</button>
+                    <!--<button class="btn btn-lg btn-success">View Detail</button>-->
+                </div>
+                <div class="col-lg-6 col-md-6 wow bounceInRight" data-wow-delay="0.5s">
+                    <img src="/images/ssa_logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+<!--End Header-->
+  <!--Events-->
+  <div id="events" class="events"  ng-controller="formalButton">
+      <div class="container">
+          <h2 class="wow fadeInUp">Events</h2>
+          <p>Sikh Student Association of San Jose State University hosts a variety of events throughout the year. You can find some of these here.</p>
+          <div class="row">
+              <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="0.3s">
+                  <a href="formal">
+                      <button  class="fa fa-black-tie" aria-hidden="true" ng-click="formal()" ></button></a>
+                  <h4>Formal</h4>
+                  <p>Info about formal</p>
+              </div>
+              <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="0.3s">
+                  <i class="fa fa-handshake-o" aria-hidden="true"></i>
+                  <h4>General Meeting</h4>
+                  <p>Info about meeting</p>
+              </div>
+              <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="0.3s">
+                  <i class="fa fa-tumblr-square" aria-hidden="true"></i>
+                  <h4>Turban Day</h4>
+                  <p>Info about Turban day</p>
+              </div>
+              <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="0.3s">
+                  <i class="fa fa-trophy" aria-hidden="true"></i>
+                  <h4>Game Night</h4>
+                  <p>Info about Game Night</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!--End Events-->
+
+  <!--Council-->
+  <div id="council" class="council">
+      <div class="container">
+          <div class="row>">
+              <h2 class="wow fadeInUp">Meet our Council Members</h2>
+              <p>SSA council members for the Fall Semester 2017</p>
+              <div class="col-lg-3 col-md-3  wow flipInY" data-wow-delay="0.4s">
+              <img src="/images/member-1.jpg" alt="" class="img-circle">
+              <h4>Arsh Bhatti</h4>
+                  <b>Council Member</b>
+                  <p>Masters in Software Engineering</p>
+                  <a target="_blank" href="http://www.facebook.com/arshbhatti8"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              </div>
+              <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="0.6s">
+                  <img src="/images/member-2.jpg" alt="" class="img-circle">
+                  <h4>Manmeet Gill</h4>
+                  <b>Council Member</b>
+                  <p>Bachelors in Software Engineering</p>
+                  <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              </div>
+              <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="0.8s">
+                  <img src="/images/member-3.jpg" alt="" class="img-circle">
+                  <h4>Karandeep Singh</h4>
+                  <b>Council Member</b>
+                  <p>Bachelors in Political Science</p>
+                  <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              </div>
+              <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="1s">
+                  <img src="/images/member-4.jpg" alt="" class="img-circle">
+                  <h4>Raghuvir Singh</h4>
+                  <b>Council Member</b>
+                  <p>Bachelors in Aeronautical Engineering</p>
+                  <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              </div>
+
+
+
+          </div>
+      </div>
+  </div>
+  <!--END COUNCIL-->
+  <!--SPONSORS-->
+
+  <div id="sponsors" class="sponsors">
+      <div class="container">
+          <div class="row">
+              <h2 class="wow fadeInUp">OUR PREVIOUS SPONSORS</h2>
+              <p>Bahut paise ditte ne saanu, pun intended</p>
+              <div class="col-lg-3 col-md-3 wow zoomInDown" data-wow-delay="0.3s">
+                  <li><img src="/images/client1.png" alt=""></li>
+              </div>
+              <div class="col-lg-3 col-md-3 wow zoomInDown" data-wow-delay="0.6s">
+                  <li><img src="/images/client2.png" alt=""></li>
+              </div>
+              <div class="col-lg-3 col-md-3 wow zoomInDown" data-wow-delay="0.9s">
+                  <li><img src="/images/client3.png" alt=""></li>
+              </div>
+              <div class="col-lg-3 col-md-3 wow zoomInDown" data-wow-delay="1.2s">
+                  <li><img src="/images/client4.png" alt=""></li>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!--END SPONSORS-->
+  <!--CONTACT-->
+    <div id="contact" class="contact">
+        <div class="container">
+            <div class="row">
+                <h2 class="wow fadeInUp">Contact</h2>
+                <p class="wow fadeInUp" data-wow-delay="0.4">You can contact us for any queries about sponsoring our events or about our Committee by submitting this form</p>
+                <div class="col-lg-6 col-md-6">
+                    <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="0.8s">
+                        <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
+                        <input type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="Full Name">
+                    </div>
+                    <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="1.2s">
+                        <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <input type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="Email Address">
+                    </div>
+                    <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="1.6s">
+                        <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <input type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="Phone Number">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="input-group wow fadeInUp" data-wow-delay="2s">
+                        <textarea name="" id="" cols="80" rows="6" class="form-control"></textarea>
+                    </div>
+                    <button class="btn btn-lg wow fadeInUp" data-wow-delay="2.4s">Submit Your Message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---- End Contact ----->
+
+
+    <!---- Footer ---->
+
+    <div id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <h4 class="wow fadeInUp">Contact Us</h4>
+                    <p><i class="fa fa-home" aria-hidden="true"></i> Haveli Networks- 405 S 7th Street, San Jose</p>
+                    <p><i class="fa fa-envelope" aria-hidden="true"></i> arsh.bhatti8@gmail.com</p>
+                    <p><i class="fa fa-phone" aria-hidden="true"></i> +1 510 246 7340</p>
+                    <p><i class="fa fa-globe" aria-hidden="true"></i>www.studentorgs.sjsu.edu/ssa/</p>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h4>About</h4>
+                    <p><i class="fa fa-square-o" aria-hidden="true"></i> About Us</p>
+                    <p><i class="fa fa-square-o" aria-hidden="true"></i> Our Constitution</p>
+
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h4>Stay in touch</h4>
+                    <i class="social fa fa-facebook" aria-hidden="true"></i>
+                    <i class="social fa fa-twitter" aria-hidden="true"></i>
+                    <i class="social fa fa-linkedin" aria-hidden="true"></i>
+                    <i class="social fa fa-youtube" aria-hidden="true"></i>
+                    <i class="social fa fa-github" aria-hidden="true"></i><br>
+                    <input type="email" placeholder="Subscribe For Updates"><button class="btn btn-success">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/javascripts/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="/javascripts/jquery-3.2.1.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+  </body>
+
+</html>
