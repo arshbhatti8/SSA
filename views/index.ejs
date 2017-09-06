@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SSA</title>
-
-    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" >
+      <script src="/javascripts/angular.min.js"></script>
+      <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" >
       <link rel="stylesheet" href="/stylesheets/animate.min.css" >
       <link rel="stylesheet" href="/stylesheets/font-awesome/css/font-awesome.css" >
 
@@ -54,7 +54,9 @@
                         Sikh Students Association (SSA) exists to provide a forum for SJSU students to learn about Sikhism, its history, beliefs, and culture.
                         This is achieved by building working relationships with other organizations and performing community service.
                     </p>
-                    <button class="btn btn-lg btn-primary">View Detail</button>
+                    <a target="_blank" href="https://www.facebook.com/ssasjsu/">
+                    <button class="btn btn-lg btn-primary">Facebook Page of SSA</button>
+                    </a>
                     <!--<button class="btn btn-lg btn-success">View Detail</button>-->
                 </div>
                 <div class="col-lg-6 col-md-6 wow bounceInRight" data-wow-delay="0.5s">
@@ -65,32 +67,60 @@
     </div>
 <!--End Header-->
   <!--Events-->
-  <div id="events" class="events"  ng-controller="formalButton">
-      <div class="container">
+  <div id="events" class="events"  ng-controller="events">
+      <div class="container-fluid">
+
           <h2 class="wow fadeInUp">Events</h2>
-          <p>Sikh Student Association of San Jose State University hosts a variety of events throughout the year. You can find some of these here.</p>
+          <p>Sikh Student Association of San Jose State University hosts a variety of events throughout the year. Our most popular events are listed below.</p>
+          <div class="col-md-4 wow fadeInLeft" data-wow-delay="0.3s">
           <div class="row">
-              <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="0.3s">
-                  <a href="formal">
-                      <button  class="fa fa-black-tie" aria-hidden="true" ng-click="formal()" ></button></a>
+              <div class="span8" style="padding-right:40px; border-right: 1px solid #ccc;">
+              <iframe src="https://calendar.google.com/calendar/embed?src=m433qnba44r52dkd7tjabtut7s%40group.calendar.google.com&ctz=America/Los_Angeles" style="border: 0" width="370" height="500" frameborder="0" scrolling="no"></iframe>
+              </div>
+          </div>
+          </div>
+          <div class="col-md-7">
+
+              <div class="sideEvents"  class="row">
+              <div  class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+                  <a target="_blank" href="https://www.facebook.com/pg/ssasjsu/photos/?tab=album&album_id=1473451666012306">
+                      <button class="fa fa-black-tie" aria-hidden="true" ></button>
+                      <span class="tooltiptext">Formal is a party organized by the SSA annually. Click the button for pictures !</span>
+                  </a>
                   <h4>Formal</h4>
-                  <p>Info about formal</p>
               </div>
-              <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="0.3s">
-                  <i class="fa fa-handshake-o" aria-hidden="true"></i>
+
+              <div class="col-lg-6  wow fadeInRight" data-wow-delay="0.3s">
+                  <a target="_blank" href="https://www.facebook.com/pg/ssasjsu/photos/?tab=album&album_id=745925002098313">
+                      <button class="fa fa-handshake-o" aria-hidden="true"></button>
+                      <span class="tooltiptext">General Meeting. Click the button for pictures !</span>
+                  </a>
                   <h4>General Meeting</h4>
-                  <p>Info about meeting</p>
               </div>
-              <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="0.3s">
-                  <i class="fa fa-tumblr-square" aria-hidden="true"></i>
+
+          <div class="row">
+              <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+                  <br><br>
+                  <a target="_blank" href="https://www.facebook.com/pg/ssasjsu/photos/?tab=album&album_id=1460718493952290">
+                  <button class="fa fa-tumblr-square" aria-hidden="true"></button>
+                      <span class="tooltiptext">Turban Day is organized twice a year and focuses on the importance of a Turban for a Sikh. Click the button for pictures !</span>
+                  </a>
                   <h4>Turban Day</h4>
-                  <p>Info about Turban day</p>
               </div>
-              <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="0.3s">
-                  <i class="fa fa-trophy" aria-hidden="true"></i>
-                  <h4>Game Night</h4>
-                  <p>Info about Game Night</p>
+              <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+                  <br><br>
+                  <a target="_blank" href="https://www.facebook.com/pg/ssasjsu/photos/?tab=album&album_id=1277190125638462">
+                  <button class="fa fa-trophy" aria-hidden="true"></button>
+                      <span class="tooltiptext">Friday Night Sewa was started by SSA council members a few years ago. Members of the SSA and otherwise share rides together and go for Sewa at San Jose Gurudwara Sahib. Click the button for pictures !</span>
+                  </a>
+                      <h4>Friday Night Sewa</h4>
+
               </div>
+          </div>
+              </div>
+          <div class="otherEvents" class="row">
+              <button class="btn btn-lg btn-primary wow fadeInUpBig" ng-click="otherEventsButton()">View Other Events</button>
+          </div>
           </div>
       </div>
   </div>
@@ -199,7 +229,7 @@
                   <a target="_blank" href="http://www.instagram.com/_salonniii"><i class="fa fa-instagram" aria-hidden="true"></i></a>
               </div>
               <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="0.8s">
-                  <img src="/images/member-1.jpg" alt="" class="img-circle">
+                  <img src="/images/member-11.jpg" alt="" class="img-circle">
                   <h4>Gaurav Singh</h4>
                   <b>Council Member</b>
                   <p>Bachelors in Biological Sciences</p>
@@ -216,7 +246,8 @@
                   <a target="_blank" href="http://www.facebook.com/arshbhatti8"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                   <a target="_blank" href="http://www.facebook.com/arshbhatti8"><i class="fa fa-instagram" aria-hidden="true"></i></a>
               </div>
-              <div class="col-lg-12 col-md-3 wow flipInY" data-wow-delay="1s">
+              <div class="col-lg-12">
+              <div class="col-md-6 wow flipInY" data-wow-delay="1s">
                   <img src="/images/member-13.jpg" alt="" class="img-circle">
                   <h4>Subbie Kaur</h4>
                   <b>Council Member</b>
@@ -224,6 +255,16 @@
                   <a target="_blank" href="http://www.facebook.com/subgun"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                   <a target="_blank" href="http://www.facebook.com/arshbhatti8"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                   <a target="_blank" href="http://www.instagram.com/subbie_kaur"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              </div>
+              <div class="col-md-6 wow flipInY" data-wow-delay="1s">
+                  <img src="/images/member-14.jpg" alt="" class="img-circle">
+                  <h4>Akshay Mehta</h4>
+                  <b>Council Member</b>
+                  <p>Bachelors in International Business</p>
+                  <a target="_blank" href="https://www.facebook.com/ssasjsu/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  <a target="_blank" href="http://www.facebook.com/arshbhatti8"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  <a target="_blank" href="https://www.instagram.com/9_akshay_mehta_6/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              </div>
               </div>
           </div>
       </div>
@@ -320,6 +361,8 @@
     </script>
     <script src="/javascripts/jquery-3.2.1.min.js"></script>
     <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/otherEvents.js"></script>
+
   </body>
 
 </html>

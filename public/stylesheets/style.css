@@ -147,15 +147,47 @@ p{
   background-color: #007dbf;
   color:#fff;
 }
-.events button{
+.sideEvents button{
     height:80px;
     width:80px;
     font-size:30px;
-    padding:25px 20px;
+
     border-radius:50%;
     background-color: #007dbf;
     color:#fff;
+}
 
+/* Tooltip container */
+
+.sideEvents {
+    position: relative;
+    display: inline-block;
+
+}
+
+.sideEvents .tooltiptext {
+
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+/* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+
+}
+.sideEvents a:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+
+.otherEvents{
+    margin-top:70px;
 }
 @media(max-width:768px)
 {
