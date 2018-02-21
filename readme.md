@@ -1,4 +1,7 @@
+To see a live instance of the website, go to www.sikh-student-association.herokuapp.com
+
 This is a web application for the Sikh Student Association at San Jose State University. It uses <b>BootStrap</b> for the front end and <b>Angular.js and Wow.js</b> for some JavaScript related operations. All the Javascripts like <b>Angular.js, Jquery and Wow.js </b> are a part of this repository. There is no need to download and place them inside the project folder separately.
+
 
 Make sure you have node.js and express installed on your machine before you try to run the project locally. 
 
